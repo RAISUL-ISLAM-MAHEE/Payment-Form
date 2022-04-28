@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="" content="">
+    <link rel="stylesheet" href="style.css">
+    <title>Payment Form</title>
+  </head>
+  <body>
+    <div class="container">
+      
+    <form action="" method="get" accept-charset="utf-8">
+      <h1 class="mainHeading">Payment form</h1>
+      <hr>
+      <h2> User Information</h2>
+      <p class="requiredField"> Required Fields Contain "*"</p>
+
+
+      <p>First name*: <input type="text" name="fname" id="fname" value="" placeholder="Enter your first Name" required/></p>
+
+      <p>Last name*: <input type="text" name="lname" id="lname" value="" placeholder="Enter your last Name" required/></p>
+      
+      
+      <fieldset>
+        <legend> Gender</legend>
+        Male<input type="radio" name="gender" id="male" value="" />
+        Female<input type="radio" name="gender" id="female" value="" />
+      </fieldset>
+      
+           <p>Country:
+     <select name="card_type" id="card_type" required>
+       <option value="">  < --Select a Country-- >  </option>
+       <option value="Usa">United States</option>
+       <option value="Canada">Canada</option>
+       <option value="UK">United Kingdom</option>
+     </select></p>
+      
+      <p >
+         Address*:
+         <textarea class="address" name="address" id=address rows="5" cols="0" placeholder="Your address" required></textarea>
+      </p>
+      
+     <p> Email*: <input type="email" name="email" id="email" placeholder="example@email.com" required></p>
+     
+     <p> Zipcode*: <input type="number" name="zipcode" id="zipcode" value="" placeholder="zipcode" required /></p>
+    
+     <h2> Payment Information</h2>
+    
+     <p>Card Type*:
+     <select name="card_type" id="card_type" required>
+       <option value="">   < --Select a Card Type-- > </option>
+       <option value="Visa">Visa</option>
+       <option value="MasterCard">MasterCard</option>
+       <option value="AmericanEX">AmericanEX</option>
+     </select></p>
+    
+     <p>Card Number* 
+     <input type="number" name="card_number" id="card_number" value="" placeholder="****-****-****" required/></p>
+    
+     <p> Expiration Date* 
+     <input type="date" name="exp_date" id="exp_date" value="" required /></p>
+  
+  <p> CVV*
+  <input type="password" name="cvv" id="cvv" placeholder="CVV" required /></p>
+  
+  <input type="submit" name="submit" id="submit" value="Pay Now" />
+  
+    </form>
+
+    </div>
+  </body>
+</html>
